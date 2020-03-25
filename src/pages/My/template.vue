@@ -23,7 +23,8 @@
       </router-link>
     </section>
     <section class="pages">
-      <el-pagination 
+      <el-pagination
+        small 
         background
         layout="prev,pager,next"
         :total="total" 

@@ -4,7 +4,8 @@ import store from "../store"
 
 Vue.use(Router)
 
-const router= new Router({
+const router = new Router({
+
   routes: [ //跳转时再加载相应页面（实现懒加载）
     {
       path: '/',

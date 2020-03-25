@@ -17,7 +17,7 @@ export default {
   components:{
     Header:Header,
     Footer:Footer
-  }
+  },
 }
 </script>
 
@@ -35,9 +35,6 @@ body{
   background-color:rgb(244,244,245);
 }
 #app {
-  left: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
   display:grid;
   grid-template-columns: 16% auto 16%;
   grid-template-rows: auto 1fr auto;
@@ -52,7 +49,6 @@ body{
   grid-area: header;
   padding-left:16%;
   padding-right:16%;
-
 }
 #main{
   grid-area: main;
@@ -70,6 +66,11 @@ body{
   #header{
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media(min-width: 800px){
+  #app{
+  overflow-y: scroll;
   }
 }
 </style>

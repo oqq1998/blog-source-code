@@ -12,6 +12,7 @@
     </section>
     <section class="pages">
       <el-pagination 
+        small
         background
         layout="prev,pager,next"
         :total="total" 

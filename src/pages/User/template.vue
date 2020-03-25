@@ -20,12 +20,12 @@
     </section>
     <section class="pages">
       <el-pagination 
+        small
         background
         layout="prev,pager,next"
         :total="total" 
         :current-page="page"
-        @current-change="onPageChange"
-      >
+        @current-change="onPageChange">
       </el-pagination>
     </section>
 

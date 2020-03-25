@@ -5,7 +5,7 @@ export default {
     return {
       blogs: [],
       total: 0,
-      page:1
+      page: 1,
     }
   },
   created() {
@@ -26,6 +26,6 @@ export default {
         this.$router.push({path:`/`,query:{page:newPage}})
       })
     }
-  },
+  }
 }
 
