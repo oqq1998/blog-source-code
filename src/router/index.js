@@ -5,7 +5,10 @@ import store from "../store"
 Vue.use(Router)
 
 const router = new Router({
-
+  //页面跳转后返回顶部
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  },
   routes: [ //跳转时再加载相应页面（实现懒加载）
     {
       path: '/',
@@ -62,5 +65,8 @@ router.beforeEach((to, from, next) => {
     next() //确保一定有调用next()
   }
 }) //对每个历史记录进行匹配
+
+
+
 
 export default router

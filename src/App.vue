@@ -18,6 +18,7 @@ export default {
     Header:Header,
     Footer:Footer
   },
+
 }
 </script>
 
@@ -28,7 +29,7 @@ export default {
   box-sizing: border-box;
 }
 html,body,#app{
-  height: 100%; 
+  min-height: 100%; 
   /* 让内容区main能撑开整个页面 */
 }
 body{

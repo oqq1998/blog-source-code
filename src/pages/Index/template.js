@@ -25,7 +25,7 @@ export default {
         this.page = res.page
         this.$router.push({path:`/`,query:{page:newPage}})
       })
-    }
+    },
   }
 }
 
